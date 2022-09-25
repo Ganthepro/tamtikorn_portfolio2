@@ -17,7 +17,7 @@
         justify-content: space-between;
         align-items: center;
         display: flex;
-        border-bottom: solid 4px rgb(195, 0, 47);
+        border-bottom: solid 4px #AC3520;
         height: 10vh;
         transition: filter 1s;
         font-size: 1px;
@@ -113,7 +113,7 @@
     }
     .li_1-3 a:hover {
         font-size: 20px;
-        color: rgb(195, 0, 47);
+        color: #AC3520;
         /* border: 4px solid red;  */
     }
     .but-1 {
@@ -121,7 +121,7 @@
     }
     .li_4-6 a:hover {
         font-size: 20px;
-        color: rgb(195, 0, 47);
+        color: #AC3520;
     }
     /* .li_1-3 a {
         border-bottom: 4px solid green;   
@@ -189,7 +189,7 @@
         transition: color 1s;
     }
     .footer {
-    border-top: solid 4px rgb(195, 0, 47);
+    border-top: solid 4px #AC3520;
         color: white;
         background:black;
     } 
@@ -271,7 +271,7 @@
         justify-content: space-between;
         align-items: center;
         display: flex;
-        border-bottom: solid 4px rgb(195, 0, 47);
+        border-bottom: solid 4px #AC3520;
         height: 10vh;
         transition: filter 1s;
         z-index: 1;
@@ -334,7 +334,7 @@
         
     #a-link button:hover {
         font-size: 17px;
-        background-color: rgb(195, 0, 47);
+        background-color: #AC3520;
         color: rgb(255, 209, 63);
     }
     
@@ -361,7 +361,7 @@
         background: black;
         min-height: 270px;
         height: 33%;
-        border-top: solid 4px rgb(195, 0, 47);
+        border-top: solid 4px #AC3520;
         color: white;
         transition: filter 1s;
         /* height: 270px; */
@@ -434,12 +434,12 @@
     
     .li_1-3 a:hover {
         font-size: 20px;
-        color: rgb(195, 0, 47);
+        color: #AC3520;
         /* border: 4px solid red;  */
     }
     .li_4-6 a:hover {
         font-size: 20px;
-        color: rgb(195, 0, 47);
+        color: #AC3520;
         /* border-bottom: 4px solid red;  */
     }
     
