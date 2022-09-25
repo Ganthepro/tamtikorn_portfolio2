@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?  family=Hubballi&family=Kanit:wght@100&family=Prompt&display=swap"
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
+    <title>ประวัติส่วนตัวและประวัติการศึกษา</title>
+    <link href="detail_page.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?  family=Hubballi&family=Kanit:wght@100&family=Prompt&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <h1>Tamtikorn</h1>
+        <h3 id="h3-header">E-Portfolio คณะวิศวกรรมศาสตร์</h3> 
+        <div class="container_h3"> 
+            <div id="h3-div"><h3 class="h3-1">E-Portfolio</h3><h3 class="h3-2">คณะวิศวกรรมศาสตร์</h3></div> 
+         </div>
+        <div id="a-link">
+            <button id="button-1" onclick="window.location.href = '/tamtikorn_portfolio'">Home</button> 
+            <button id="button-2" onclick="window.location.href = 'https://github.com/Ganthepro/Ganthepro/tree/main/project'">GitHub</button>
+        </div>
+        <div id="a-link2">
+            <a id="new_a_home" href="/tamtikorn_portfolio"><img src="home-pngrepo-com.png"></a>
+            <a id="new_a_github" href="https://github.com/Ganthepro/Ganthepro/tree/main/project"><img src="github-pngrepo-com (1).png"></a> 
+        </div>
+    </header>
+    <div class="container">
+        <h1>ระเบียนแสดงผลการเรียนและผลการทดสอบภาษาอังกฤษ</h1>
+        <img src="ผลอังกฤษ.svg" id="svg-1">
+    </div>
+    <footer class="footer">
+        <h1 id="h1-footer">Thanks!</h1>
+        <p>Developed & Design By Tamtikorn Kietipungchai</p>
+        <div class="info">
+            <h3>Developed & Design Languages</h3>
+            <p>HTML,CSS & Javascript</p>
+            <h3>Developed & Design Program</h3>
+            <p>Visual Studio Code & GitHub</p>
+        </div>
+        <div class="profile-image"></div>
+        <div class="contact">
+            <h3>Contact</h3>
+            <a href="https://www.facebook.com/profile.php?id=100003850463696" target="_blank"><img src="facebook.png" alt="fb-logo"></a>
+            <a href="https://www.instagram.com/gan_gun112/?hl=th" target="_blank"><img src="instagram.png" alt="ig-logo"></a>
+            <p>gan_zaza_12@hotmail.com</p>
+            <p>Tel. 098-859-5020</p>
+        </div>
+    </footer>    
+    <script>
+        var break_key = 0;
+        var break_key1 = 0;
+        const home = document.getElementById('button-1');
+        const github = document.getElementById('button-2');
+        const a_link = document.getElementsByClassName('a-link');
+        var width = window.innerWidth;
+        if (width < 768 && break_key === 0) {
+            home.remove();
+            github.remove();
+            const new_a_home = document.createElement('a');
+            const new_a_home_img = document.createElement('img');
+            const new_a_github = document.createElement('a');
+            const new_a_github_img = document.createElement('img');
+            const a_link = document.getElementById('a-link');
+            const mypic = document.getElementById('mypic');
+            new_a_home.setAttribute('id', 'new_a_home');
+            new_a_home.setAttribute('href', '/tamtikorn_portfolio');
+            new_a_github.setAttribute('id', 'new_a_github');
+            new_a_github.setAttribute('href', 'https://github.com/Ganthepro/Ganthepro/tree/main/project');
+            new_a_home_img.setAttribute('src','home-pngrepo-com.png');
+            new_a_github_img.setAttribute('src','github-pngrepo-com (1).png');
+            new_a_home_img.style.width = '25px';
+            new_a_home_img.style.height = '25px';
+            new_a_home_img.style.marginRight = '25px';
+            new_a_github_img.style.width = '25px';
+            new_a_github_img.style.height = '25px';
+            a_link.style.marginRight = '10px'
+            new_a_home.appendChild(new_a_home_img);
+            new_a_github.appendChild(new_a_github_img);
+            a_link.appendChild(new_a_home);
+            a_link.appendChild(new_a_github);
+            break_key += 1
+        }
+        else if (width > 768 && break_key1 === 0) {
+            break_key1 += 1
+            break_key += 1
+        }
+        window.addEventListener('resize', function() {
+            var width = window.innerWidth;
+            const new_a_home = document.createElement('a');
+            const new_a_home_img = document.createElement('img');
+            const new_a_github = document.createElement('a');
+            const new_a_github_img = document.createElement('img');
+            const a_link = document.getElementById('a-link');
+            const svg1 = document.getElementById('svg-1');
+            const svg2 = document.getElementById('svg-2');
+            if (width < 768 && break_key === 0) {
+                home.remove();
+                github.remove();
+                new_a_home.setAttribute('id', 'new_a_home');
+                new_a_home.setAttribute('href', '/tamtikorn_portfolio');
+                new_a_github.setAttribute('id', 'new_a_github');
+                new_a_github.setAttribute('href', 'https://github.com/Ganthepro/Ganthepro/tree/main/project');
+                new_a_home_img.setAttribute('src','home-pngrepo-com.png');
+                new_a_github_img.setAttribute('src','github-pngrepo-com (1).png');
+                svg1.style.width = toString(width) + 'px'
+                svg2.style.width = toString(width) + 'px'
+                break_key += 1
+                break_key1 -= 1
+            }
+            else if (width > 768 && break_key1 === 0) {
+                const a_home = document.getElementById('new_a_home');
+                const a_github = document.getElementById('new_a_github');
+                a_home.remove()
+                a_github.remove()
+                const button_1 = document.createElement('button');
+                button_1.setAttribute('id','button-1')
+                button_1.setAttribute('onclick',"window.location.href = '/tamtikorn_portfolio'")
+                button_1.innerHTML = 'Home'
+                const button_2 = document.createElement('button');
+                button_2.setAttribute('id','button-2')
+                button_2.setAttribute('onclick',"window.location.href = 'https://github.com/Ganthepro/Ganthepro/tree/main/project'")
+                button_2.innerHTML = 'GitHub'
+                a_link.appendChild(button_1);
+                a_link.appendChild(button_2);
+                a_link.style.marginRight = '0'
+                a_link.style.position = 'absolute'
+                break_key1 += 1
+            }
+        })
+    </script>
+</body>
+</html>

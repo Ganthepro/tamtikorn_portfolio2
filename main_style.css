@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background: rgb(255, 209, 63);
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    border-bottom: solid 4px black;
+    height: 10vh;
+}
+
+.header h1 {
+    margin: 0;
+    padding: 5px;
+    padding-left: 80px;
+    text-align: left;
+    max-height: 80px;
+    display: inline-block;
+    color: black;
+    font-family: 'Square Peg', cursive;
+    font-size: 50px;
+    transform: rotate(-5deg);
+}
+
+.header h3{
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    padding-right: 90vh;
+    position: relative;
+    height: 60px;
+    display: block;
+    color: black;
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    border: 4px solid rgb(255, 209, 63)
+}
+
+button {
+    transition-property: font-size;
+    transition-duration: 2s;
+    font-size: 15px;
+}
+
+.a-link button {
+    font-family: 'Prompt', sans-serif;
+    width: 100px;
+    height: 100%;
+    right: 0;
+    margin-right: 40px;
+    transition-property: font-size;
+    transition-duration: 2s;
+    border-radius: 0;
+    border: 0;
+    background-color: rgb(255, 209, 63);
+}
+
+.button-container button:hover {
+    font-size: 20px;
+    background-color: black;
+    color: rgb(255, 209, 63);
+}
+    
+button:hover {
+    font-size: 17px;
+    background-color: black;
+    color: rgb(255, 209, 63);
+}
+
+.a-link {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    right: 0;
+    min-width: 30%;
+}
+
+#button-2 {
+    margin-left: 70px;
+}
+
+.footer {
+    position: absolute;
+    text-align: center;
+    margin: 0;
+    bottom : 0;
+    left: 0;
+    right: 0;
+    background: black;
+    border-top: solid 4px rgb(255, 209, 63);
+    color: white;
+}
+
+#p-footer {
+    color: white;
+}
+
+.footer h1 {
+    text-align: center;
+}
+
+.info {
+    position: absolute;
+    text-align: left;
+    display: inline-block;
+    left: 0;
+    padding-left: 20px;
+    top:35%;
+}
+
+h3 {
+    margin-bottom: 5px;
+}
+
+.footer > p {
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 5px;
+    top: 55%;
+    left: 60%;
+    margin-left: 20px;
+    align-content: center;
+    transform: translate(-50%, -50%)
+}
+
+.button-container {
+    padding: 0;
+    position: relative;
+    background-color: grey;
+    height: 57vh;
+    width: auto;
+}
+
+.button-container button {
+    position: absolute;
+    border: 0;
+    margin: auto;
+    padding: 0;
+    width: 33.33%;
+    height: 50%;
+    font-family: 'Prompt', sans-serif;
+    font-size:18px;
+}
+.but-1 {
+    left: 0;
+    background-color: red;
+}
+.but-2 {
+    right: 0;
+    background-color: lightgreen;
+}
+.but-3 {
+    top: 0;
+    left: 33.33%;
+    background-color: lightskyblue;
+}
+.but-4 {
+    left: 0;
+    bottom: 0;
+    background-color: violet;
+}
+.but-5 {
+    bottom: 0;
+    left: 33.33%;
+    background-color: orange;
+}
+.but-6 {
+    bottom: 0;
+    right: 0;
+    background-color: pink;
+}
+
+.contact {
+    text-align: right;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    padding-right: 20px;
+    top:32%;
+}
+
+.contact img {
+    width: 50px;
+    height: 50px;
+    right: 0; 
+}
+
+.profile-image {
+    position: absolute;
+    border: solid 10px white;
+    border-radius: 50%;
+    width: 175px;
+    height: 175px;
+    top : 29%;
+    left: 42.5%;
+    transform: translate(-50%, 0);
+    background-image: url("raccoon.jpg");
+    background-position: -180px -100px;
+    background-size: cover;
+}
+
+

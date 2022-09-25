@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+    <script>
+        let user_list = []
+        let pass_list = []
+        let tag = document.createElement('p');
+        function result() {
+            let user = document.getElementById('user').value;
+            let pass = document.getElementById('pass').value;
+            let check = ['',''];
+            if (user_list.length === 0) {
+                tag.innerHTML = 'Pass';
+                user_list.push(user);
+                pass_list.push(pass);
+                console.log('user : ',user_list);
+                console.log('pass : ',pass_list);
+            }
+            else {
+                for (i = 0;i < user_list.length;i++) {
+                    if (user === user_list[i]) {
+                        tag.innerHTML = 'Fail';
+                        check[0] = ('N');
+                        break;
+                    }
+                    else {
+                        check[0] = ('Y');
+                    }
+                }
+                for (i = 0;i < user_list.length;i++) {
+                    if (pass === pass_list[i]) {
+                        tag.innerHTML = 'Fail';
+                        check[1] = ('N');
+                        break;
+                    }
+                    else {
+                        check[1] = ('Y');
+                    }
+                }
+                if (check[0] === 'Y' && check[1] === 'Y') {
+                    tag.innerHTML = 'Pass';
+                    user_list.push(user);
+                    pass_list.push(pass);
+                    console.log('user : ',user_list);
+                    console.log('pass : ',pass_list);
+                }
+            }
+            document.body.appendChild(tag);
+        }
+    </script>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        #user {
+            margin-bottom: 10px;
+        }
+
+        #pass {
+            margin-bottom: 10px;
+        }
+    </style>
+<!--    <script src="mainjs.js"></script>-->
+<!--    <link href="main_style.css" rel="stylesheet" type="text/css" />-->
+</head>
+<body>
+    <h1>Sign Up - Login Test</h1>
+    <label for="user">Username : </label>
+    <input id="user" type="text">
+    <br>
+    <label for="pass">Password : </label>
+    <input id="pass" type="text">
+    <br>
+    <button onclick="result()">Submit</button>
+</body>
+</html>
