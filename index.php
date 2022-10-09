@@ -28,6 +28,7 @@
             <a id="new_a_github" href="https://github.com/Ganthepro/Ganthepro/tree/main/project"><img src="github-pngrepo-com (1).png"></a> 
         </div>
     </header>
+    <!-- <img class="logo" src="Artboard 1.svg"> -->
     <div id="mypic"></div>
     <div id="button-container">
         <div class="li_1-3">
