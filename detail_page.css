@@ -4,6 +4,11 @@
         padding: 0;
         box-sizing: border-box;
         transition: filter 1s;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: -moz-none;
+        -o-user-select: none;
+        user-select: none;
     }
     body {
         margin: 0;
@@ -252,6 +257,11 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: -moz-none;
+        -o-user-select: none;
+        user-select: none;
     }
     
     body {
