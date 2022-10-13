@@ -236,6 +236,9 @@
     #activity {
         height: 1500px;   
     }
+    #certificate {
+        height: 1500px;   
+    }
     .container {
         position: relative;
         background-color: grey;
@@ -338,6 +341,9 @@
         height: 700px;   
     }
     #activity {
+        height: 5000px;   
+    }
+    #certificate {
         height: 5000px;   
     }
     button {
