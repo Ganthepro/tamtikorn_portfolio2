@@ -231,7 +231,10 @@
         height: 600px;   
     }
     #personal {
-        height: 600px;   
+        height: 900px;   
+    }
+    #activity {
+        height: 1500px;   
     }
     .container {
         position: relative;
@@ -333,6 +336,9 @@
     }
     #personal {
         height: 700px;   
+    }
+    #activity {
+        height: 5000px;   
     }
     button {
         transition-property: font-size;
